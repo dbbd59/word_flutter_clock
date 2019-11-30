@@ -15,12 +15,12 @@ final _darkTheme = {
   _Element.textHighlighted: Colors.white
 };
 
-class DigitalClock extends StatefulWidget {
+class WordClock extends StatefulWidget {
   @override
-  _DigitalClockState createState() => _DigitalClockState();
+  _WordClockState createState() => _WordClockState();
 }
 
-class _DigitalClockState extends State<DigitalClock> {
+class _WordClockState extends State<WordClock> {
   DateTime _dateTime = DateTime.now();
   Timer _timer;
 
@@ -183,7 +183,7 @@ class ClockText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final fontSize = MediaQuery.of(context).size.width / 20;
+    final fontSize = MediaQuery.of(context).size.width / 22;
     final colors = MediaQuery.of(context).platformBrightness == Brightness.light
         ? _lightTheme
         : _darkTheme;

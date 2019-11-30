@@ -8,7 +8,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'digital_clock.dart';
+import 'word_clock.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,11 +21,8 @@ Future<void> main() async {
     MaterialApp(
       home: SafeArea(
         child: Center(
-          child: AspectRatio(
-            aspectRatio: 5 / 3,
-            child: Container(
-              child: DigitalClock(),
-            ),
+          child: Container(
+            child: WordClock(),
           ),
         ),
       ),
